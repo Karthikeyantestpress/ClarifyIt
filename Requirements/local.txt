@@ -1,0 +1,2 @@
+django-tailwind==3.4.0
+pre-commit==2.21.0
