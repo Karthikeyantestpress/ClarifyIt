@@ -24,6 +24,7 @@ media
 *.so
 
 # Distribution / packaging
+mysite/theme/
 .Python
 build/
 develop-eggs/

@@ -6,6 +6,7 @@ environ.Env.read_env()
 SECRET_KEY = env("SECRET_KEY")
 
 INSTALLED_APPS = [
+    "mysite.clarifyit.apps.ClarifyitConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
