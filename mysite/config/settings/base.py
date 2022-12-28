@@ -5,6 +5,8 @@ environ.Env.read_env()
 
 SECRET_KEY = env("SECRET_KEY")
 
+TAILWIND_APP_NAME = "theme"
+
 INSTALLED_APPS = [
     "mysite.clarifyit.apps.ClarifyitConfig",
     "django.contrib.admin",
@@ -13,6 +15,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "tailwind",
+    "theme",
+    "django_browser_reload",
 ]
 
 MIDDLEWARE = [
@@ -23,6 +28,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 TEMPLATES = [
@@ -71,3 +77,7 @@ USE_I18N = True
 USE_TZ = True
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+LOGIN_REDIRECT_URL = "home"
+LOGIN_URL = "login"
+LOGOUT_REDIRECT_URL = "login"
