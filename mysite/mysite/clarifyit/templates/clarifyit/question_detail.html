@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <div class="py-2 px-32">
+     <div>
+          <h2 class="text-2xl font-semibold">{{ object.title }}</a><h2>
+         <div class="mt-2">
+            <span class="left"> Asked {{ object.created.date }}</span>
+         </div>
+          <h1 class="text-2x1   ">{{ object.description }}</a><h1>
+         </div>
+      </div>
+  </div>
+{% endblock %}
