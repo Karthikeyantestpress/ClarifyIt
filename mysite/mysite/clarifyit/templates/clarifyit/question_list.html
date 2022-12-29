@@ -5,7 +5,7 @@
      {% for question in object_list %}
      <div class>
           <div class="shadow-md p-4 mx-24 mb-4 min-w-300">
-          <h2 class="text-2xl font-semibold hover:text-sky-600 text-sky-500"><a href="#">{{ question.title }}</a><h2>
+          <h2 class="text-2xl font-semibold hover:text-sky-600 text-sky-500"><a href="{{ question.get_absolute_url }}">{{ question.title }}</a><h2>
           <div class="mt-2">
             <span class="left">Posted On: {{ question.created.date }}</span>
             <span class="float-right">By: <a class="text-purple-500" href="#">{{ question.author }}</a></span>
